@@ -12,9 +12,9 @@ import { useEffect, useState } from "react";
 //   return res.json();
 // }
 
-function UserDetails({ params }: { params: { userId: number } }) {
+ function UserDetails({ params }: { params: { userId: number } }) {
   const id = params.userId;
-  // const data = getData(id)
+  // const data =  await getData(id)
   const [data, setData] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
 
